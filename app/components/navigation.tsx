@@ -166,7 +166,7 @@ export function Navigation({ user, planId }: NavigationProps) {
               <Button variant="ghost" className="h-8 w-8 rounded-full" title="user-icon">
                 {user?.image?.id ? (
                   <img
-                    className="min-h-8 min-w-8 rounded-full object-cover"
+                    className="h-full min-h-8 min-w-8 rounded-full object-cover"
                     alt={user.username ?? user.email}
                     src={getUserImgSrc(user.image?.id)}
                   />
